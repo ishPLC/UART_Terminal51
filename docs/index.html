@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>UART Terminal V51 ishPLC(C) 2021 </title>
+	<meta charset="utf-8">
+  	<title>Calendar</title>
+	
+ </head>
+
+ <body>
+	<p style="color:blue; font-size: 20pt; ont-size: 20pt; text-shadow: 5px 2px 4px grey;">	
+		ishPLC(c) 2021   </p>
+		
+
+	<center><h1> UART Terminal V51 </h1>
+	<center><h2>"UART Terminal Style: Dark" Settings COM Port</h2>
+
+  	<p><img src="img/01.JPG" alt="nodata"></p>
+<center><h2>Basic info before work: </h2>
+<br> </br>
+
+1. Check basic program settings, <br> </br>
+(for PLC Arduino are default):<br> </br>
+	BaudRate 9600 <br> </br>
+	DataBits 8 (pro ver.) <br> </br>
+	Parity none (pro ver.) <br> </br>
+	StopBits 1 (pro ver.) <br> </br>
+2. Check COM Port number (default is #1). <br> </br>
+3. Check USB - UART connection:<br> </br>
+	PC - USB - Arduino.<br> </br>
+4. Check Scetch Arduino:<br> </br>
+	void setup() {<br> </br>
+	// Open serial communications:<br> </br>
+	Serial.begin(9600); // default<br> </br>
+	}<br> </br>
+If message: "Com Port Error", <br> </br>
+check hardware again.<br> </br>
+
+The program "UART Terminal ishPLC (C) Free" ver.51.1 is a simple UART terminal for working with a PLC, including an Arduino controller.
+This version implements the program's features:
+* reliable, lightweight program, suitable for both beginners and professionals.
+* intuitive interface, easy navigation through the program tabs.
+* Choice of COM Port from 1 to infinity.
+* Selection of the baud rate of the terminal and PLC: either fixed by the standard or any other value that can be entered in the Baud Rate selection field (This also applies to the selection of the port number).
+(* * These options are used for advanced users, in the professional version).
+* Ability to increase or decrease the terminal font.
+* Ability to receive data from the PLC, and send data to the PLC.
+* Ability to write a terminal report to the log file in the * .csv format (coma saparated vol.), Which allows you to open the UART.csv file both in any text editor and in electronic tables: for analysis, charting, etc.
+* The program has been tested in various modes, is easy to use, consumes a minimum of resources (up to 2.2 MB) of RAM, runs on any version from XP, 7 to 10.
+<br> </br>
+
+<center><h2>"UART Terminal ishPLC(C) Pro" ver.51</h2>
+functionality added in the "professional" version: <br> </br>
+(in developing) <br> </br>
+* selection of DataBits, Parity, StopBits <br> </br>
+* work on RS485 <br> </br>
+* sending commands from the terminal line to the COM Port <br> </br>
+* sending a file <br> </br>
+<br> </br>
+
+	<center><h2> Terminal window  </h2>
+	<p><img src="img/02.JPG" alt="nodata"></p>
+	
+	<center><h2>  Connected. Data registration.  </h2>
+	<p><img src="img/03.JPG" alt="nodata"></p>
+	
+		<center><h2>  Saving Report  </h2>
+	<p><img src="img/04.JPG" alt="nodata"></p>
+		<center><h2>  Font -> Size+ (zoom+) </h2>
+	<p><img src="img/05.JPG" alt="nodata"></p>
+		<center><h2>  COM Port "Error"  </h2>
+	<p><img src="img/06.JPG" alt="nodata"></p>
+		<center><h2>  "About" Panel  </h2>
+	<p><img src="img/07.JPG" alt="nodata"></p>
+		<center><h2> Data in El.Table (*.csv format)  </h2>
+	<p><img src="img/08.JPG" alt="nodata"></p>
+		<center><h2>  Data. Chart in El.Table  </h2>
+	<p><img src="img/09.JPG" alt="nodata"></p>
+	
+	<center><h2> Video: how it works...  </h2>
+	
+	<video  controls =  "controls">
+		<source src = "v/UART.mp4"  type = "video/mp4" />
+		<source src = "v/UART.webm" type = "video/webm" />
+		<source src = "v/UART.ogv"  type = "video/ogv" />
+	</video>
+
+<!-- UART_HMI_IP ishPLC(C) 2021 -->
+	<center><h3> UART_HMI_IP  </h3>
+	<center><h3> I.Shaturny ishPLC © 2021 </h3>
+	<p><img src="img/i44.png" alt="nodata"></p>
+	<center>	<p style="color:blue; font-size: 14pt; ont-size: 14pt; text-shadow: 5px 2px 4px grey;">	ishplcprog@gmail.com   </p>
+	<center><h3> 31 May 2021 </h3>
+	
+	<center><h4> Today: </h4>
+	<script language="javascript" type="text/javascript"><!--
+	var d = new Date();
+
+	var day=new Array("Sun","Mon","Tue",
+	"Wdn","Thr","Fr","Std");
+
+	var month=new Array("jan","feb","mar","apr","may","jun",
+	"jul","aug","sent","oct","nov","dec");
+
+	document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
+	+ " " + d.getFullYear() + "");
+</script>
+
+
+
+<!-- I.Shaturny  <ishPLC©2021>-->
+<!-- git.05.2021 ver.21 >-->
+
+
+ </body>
+</html>
